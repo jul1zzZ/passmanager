@@ -1,0 +1,281 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jusep\\source\\repos\\pass\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\pages\\addaccountpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\pages\\addaccountpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\pages\\addaccountpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\pages\\addaccountpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\pass.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\pass.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\converters\\inverseboolconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\converters\\inverseboolconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\models\\passworditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\models\\passworditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\pages\\editaccountpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\pages\\editaccountpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|c:\\users\\jusep\\source\\repos\\pass\\pass\\pages\\editaccountpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26C87C37-FEFA-4341-9CA2-5817FD58EB2E}|pass\\pass.csproj|solutionrelative:pass\\pages\\editaccountpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddAccountPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Pages\\AddAccountPage.xaml.cs",
+              "RelativeDocumentMoniker": "pass\\Pages\\AddAccountPage.xaml.cs",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Pages\\AddAccountPage.xaml.cs",
+              "RelativeToolTip": "pass\\Pages\\AddAccountPage.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T14:50:36.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Services\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "pass\\Services\\DatabaseService.cs",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Services\\DatabaseService.cs",
+              "RelativeToolTip": "pass\\Services\\DatabaseService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T14:44:35.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "pass\\Models\\Account.cs",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Models\\Account.cs",
+              "RelativeToolTip": "pass\\Models\\Account.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA/wCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T14:44:28.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\MainPage.xaml",
+              "RelativeDocumentMoniker": "pass\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\MainPage.xaml",
+              "RelativeToolTip": "pass\\MainPage.xaml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAwwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-24T14:49:12.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "pass\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\MainPage.xaml.cs",
+              "RelativeToolTip": "pass\\MainPage.xaml.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAADwv3sAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T14:49:45.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "pass.csproj",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\pass.csproj",
+              "RelativeDocumentMoniker": "pass\\pass.csproj",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\pass.csproj",
+              "RelativeToolTip": "pass\\pass.csproj",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-25T13:40:51.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Pages\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "pass\\Pages\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Pages\\LoginPage.xaml.cs",
+              "RelativeToolTip": "pass\\Pages\\LoginPage.xaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwDAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T15:03:53.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddAccountPage.xaml",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Pages\\AddAccountPage.xaml",
+              "RelativeDocumentMoniker": "pass\\Pages\\AddAccountPage.xaml",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Pages\\AddAccountPage.xaml",
+              "RelativeToolTip": "pass\\Pages\\AddAccountPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-24T14:46:13.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Pages\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "pass\\Pages\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Pages\\LoginPage.xaml",
+              "RelativeToolTip": "pass\\Pages\\LoginPage.xaml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAwwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-24T15:03:32.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\App.xaml.cs",
+              "RelativeDocumentMoniker": "pass\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\App.xaml.cs",
+              "RelativeToolTip": "pass\\App.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA5wCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T14:46:23.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PasswordItem.cs",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Models\\PasswordItem.cs",
+              "RelativeDocumentMoniker": "pass\\Models\\PasswordItem.cs",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Models\\PasswordItem.cs",
+              "RelativeToolTip": "pass\\Models\\PasswordItem.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T15:07:35.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "pass\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\MauiProgram.cs",
+              "RelativeToolTip": "pass\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T14:47:05.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EditAccountPage.xaml",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Pages\\EditAccountPage.xaml",
+              "RelativeDocumentMoniker": "pass\\Pages\\EditAccountPage.xaml",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Pages\\EditAccountPage.xaml",
+              "RelativeToolTip": "pass\\Pages\\EditAccountPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-24T14:55:42.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InverseBoolConverter.cs",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Converters\\InverseBoolConverter.cs",
+              "RelativeDocumentMoniker": "pass\\Converters\\InverseBoolConverter.cs",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Converters\\InverseBoolConverter.cs",
+              "RelativeToolTip": "pass\\Converters\\InverseBoolConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T14:58:40.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EditAccountPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Pages\\EditAccountPage.xaml.cs",
+              "RelativeDocumentMoniker": "pass\\Pages\\EditAccountPage.xaml.cs",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\Pages\\EditAccountPage.xaml.cs",
+              "RelativeToolTip": "pass\\Pages\\EditAccountPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T14:56:01.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\App.xaml",
+              "RelativeDocumentMoniker": "pass\\App.xaml",
+              "ToolTip": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\App.xaml",
+              "RelativeToolTip": "pass\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-24T14:46:22.643Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

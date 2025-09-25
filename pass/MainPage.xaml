@@ -1,0 +1,80 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pass.MainPage"
+             Title="Менеджер паролей">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+
+        <!-- Добавить аккаунт -->
+        <Button Text="Добавить" Clicked="OnAddClicked" />
+
+        <!-- Поиск -->
+        <SearchBar x:Name="SearchBar"
+                   Placeholder="Поиск по сервису или логину"
+                   TextChanged="OnSearchTextChanged"/>
+
+        <!-- Сортировка -->
+        <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+            <Label Text="Сортировка:" VerticalOptions="Center"/>
+            <Picker x:Name="SortPicker" SelectedIndexChanged="OnSortChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>По алфавиту</x:String>
+                        <x:String>По дате добавления</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </HorizontalStackLayout>
+
+        <!-- Фильтр по категориям -->
+        <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+            <Label Text="Категория:" VerticalOptions="Center"/>
+            <Picker x:Name="CategoryFilterPicker" SelectedIndexChanged="OnCategoryFilterChanged"/>
+        </HorizontalStackLayout>
+
+        <!-- Список аккаунтов с SwipeActions -->
+        <CollectionView x:Name="AccountsList"
+                        ItemsSource="{Binding Accounts}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <SwipeView>
+                        <SwipeView.LeftItems>
+                            <SwipeItems Mode="Reveal">
+                                <SwipeItem Text="Редактировать" BackgroundColor="LightBlue"
+                                           Invoked="OnEditSwiped"
+                                           CommandParameter="{Binding .}" />
+                                <SwipeItem Text="Удалить" BackgroundColor="LightCoral"
+                                           Invoked="OnDeleteSwiped"
+                                           CommandParameter="{Binding .}" />
+                            </SwipeItems>
+                        </SwipeView.LeftItems>
+
+                        <SwipeView.RightItems>
+                            <SwipeItems Mode="Reveal">
+                                <SwipeItem Text="Пароль" BackgroundColor="LightGreen"
+                                           Invoked="OnCopyPasswordSwiped"
+                                           CommandParameter="{Binding .}" />
+                                <SwipeItem Text="Логин" BackgroundColor="LightYellow"
+                                           Invoked="OnCopyUsernameSwiped"
+                                           CommandParameter="{Binding .}" />
+                                <SwipeItem Text="👁" BackgroundColor="LightGray"
+                                           Invoked="OnTogglePasswordSwiped"
+                                           CommandParameter="{Binding .}" />
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+
+                        <Frame Padding="10" Margin="5" BorderColor="Gray" CornerRadius="10">
+                            <VerticalStackLayout Spacing="5">
+                                <Label Text="{Binding ServiceName}" FontSize="18" FontAttributes="Bold"/>
+                                <Label Text="{Binding Username}" FontAttributes="Italic"/>
+                                <Label Text="{Binding DisplayPassword}" TextColor="Red" FontFamily="Courier New"/>
+                                <Label Text="{Binding Notes}" FontSize="12" TextColor="Gray"/>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </VerticalStackLayout>
+</ContentPage>
