@@ -1,4 +1,14 @@
-﻿obj\Debug\net9.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
+﻿obj\Debug\net9.0-android\resizetizer\r\drawable\facebook.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\gmail.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\instagram.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\other.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\steam.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\telegram.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\tiktok.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\twitter.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\vk.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\whatsapp.png
+obj\Debug\net9.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net9.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 obj\Debug\net9.0-android\resizetizer\r\drawable-xhdpi\dotnet_bot.png
 obj\Debug\net9.0-android\resizetizer\r\drawable-xxhdpi\dotnet_bot.png

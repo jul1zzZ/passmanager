@@ -1,4 +1,6 @@
 ﻿using System.Text;
+using CommunityToolkit.Maui.Alerts;
+using CommunityToolkit.Maui.Core;
 
 namespace pass.Pages;
 
@@ -45,7 +47,8 @@ public partial class LoginPage : ContentPage
     {
         if (_enteredPin.Length < _pinLength)
         {
-            await DisplayAlert("Ошибка", $"Введите {_pinLength}-значный PIN", "OK");
+            var toast = Toast.Make($"Введите {_pinLength}-значный PIN", ToastDuration.Short, 14);
+            await toast.Show();
             return;
         }
 
@@ -56,14 +59,16 @@ public partial class LoginPage : ContentPage
         {
             // Создание нового PIN
             await SecureStorage.SetAsync(PinKey, enteredPin);
-            await DisplayAlert("Успех", "PIN создан", "OK");
+            var toast = Toast.Make("PIN создан", ToastDuration.Short, 14);
+            await toast.Show();
         }
         else
         {
             // Проверка PIN
             if (enteredPin != savedPin)
             {
-                await DisplayAlert("Ошибка", "Неверный PIN", "OK");
+                var toast = Toast.Make("Неверный PIN", ToastDuration.Short, 14);
+                await toast.Show();
 
                 // 🔥 Анимация "shake"
                 await ShakeAnimation(PinDisplay);

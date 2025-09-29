@@ -5,8 +5,12 @@
 
     <VerticalStackLayout Padding="20" Spacing="10">
 
-        <!-- Добавить аккаунт -->
-        <Button Text="Добавить" Clicked="OnAddClicked" />
+        <!-- Действия -->
+        <HorizontalStackLayout Spacing="10">
+            <Button Text="Добавить" Clicked="OnAddClicked" />
+            <Button Text="Экспорт" Clicked="OnExportClicked" />
+            <Button Text="Импорт" Clicked="OnImportClicked" />
+        </HorizontalStackLayout>
 
         <!-- Поиск -->
         <SearchBar x:Name="SearchBar"
@@ -32,7 +36,7 @@
             <Picker x:Name="CategoryFilterPicker" SelectedIndexChanged="OnCategoryFilterChanged"/>
         </HorizontalStackLayout>
 
-        <!-- Список аккаунтов с SwipeActions -->
+        <!-- Список аккаунтов -->
         <CollectionView x:Name="AccountsList"
                         ItemsSource="{Binding Accounts}">
             <CollectionView.ItemTemplate>
@@ -64,12 +68,16 @@
                         </SwipeView.RightItems>
 
                         <Frame Padding="10" Margin="5" BorderColor="Gray" CornerRadius="10">
-                            <VerticalStackLayout Spacing="5">
-                                <Label Text="{Binding ServiceName}" FontSize="18" FontAttributes="Bold"/>
-                                <Label Text="{Binding Username}" FontAttributes="Italic"/>
-                                <Label Text="{Binding DisplayPassword}" TextColor="Red" FontFamily="Courier New"/>
-                                <Label Text="{Binding Notes}" FontSize="12" TextColor="Gray"/>
-                            </VerticalStackLayout>
+                            <HorizontalStackLayout Spacing="10">
+                                <!-- Иконка сервиса -->
+                                <Image Source="{Binding Icon}" WidthRequest="32" HeightRequest="32" VerticalOptions="Start"/>
+                                <VerticalStackLayout Spacing="5">
+                                    <Label Text="{Binding ServiceName}" FontSize="18" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Username}" FontAttributes="Italic"/>
+                                    <Label Text="{Binding DisplayPassword}" TextColor="Red" FontFamily="Courier New"/>
+                                    <Label Text="{Binding Notes}" FontSize="12" TextColor="Gray"/>
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
                         </Frame>
                     </SwipeView>
                 </DataTemplate>

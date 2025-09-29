@@ -9,7 +9,11 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <!-- Конвертеры -->
             <converters:InverseBoolConverter x:Key="InverseBoolConverter"/>
+            <converters:SelectedIconConverter x:Key="SelectedIconConverter"/>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

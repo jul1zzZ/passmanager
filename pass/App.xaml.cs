@@ -9,6 +9,7 @@ namespace pass
 
         // Флаг: вошёл ли пользователь
         public static bool IsAuthenticated { get; set; } = false;
+        public static bool IsPickingFile { get; set; } = false;
 
         public App(string dbPath)
         {
@@ -23,8 +24,10 @@ namespace pass
         protected override void OnSleep()
         {
             base.OnSleep();
-            // при сворачивании сбрасываем авторизацию
-            IsAuthenticated = false;
+
+            // Если мы не выбираем файл — сбрасываем авторизацию
+            if (!IsPickingFile)
+                IsAuthenticated = false;
         }
 
         protected override void OnResume()

@@ -6,18 +6,27 @@ namespace pass.Pages;
 public partial class AddAccountPage : ContentPage
 {
     private List<Category> _categories = new();
+    public List<string> IconList { get; set; } = new()
+    {
+        "gmail.png", "facebook.png", "instagram.png", "vk.png", "steam.png", "other.png"
+    };
+
+    private string _selectedIcon = "other.png";
 
     public AddAccountPage()
     {
         InitializeComponent();
+        BindingContext = this;
         LoadCategories();
+
+        // выбрать иконку по умолчанию
+        IconCollection.SelectedItem = _selectedIcon;
     }
 
     private async void LoadCategories()
     {
         _categories = (await App.Database.GetCategoriesAsync()).ToList();
 
-        // если нет категорий — создаём несколько дефолтных
         if (!_categories.Any())
         {
             var defaults = new[] { "Работа", "Личное", "Соцсети" };
@@ -31,9 +40,14 @@ public partial class AddAccountPage : ContentPage
         if (_categories.Any()) CategoryPicker.SelectedIndex = 0;
     }
 
+    private void OnIconSelected(object sender, SelectionChangedEventArgs e)
+    {
+        if (IconCollection.SelectedItem is string icon)
+            _selectedIcon = icon;
+    }
+
     private async void OnSaveClicked(object sender, EventArgs e)
     {
-        // Проверка полей
         if (string.IsNullOrWhiteSpace(ServiceNameEntry.Text) ||
             string.IsNullOrWhiteSpace(UsernameEntry.Text) ||
             string.IsNullOrWhiteSpace(PasswordEntry.Text) ||
@@ -51,7 +65,8 @@ public partial class AddAccountPage : ContentPage
             Username = UsernameEntry.Text,
             Password = PasswordEntry.Text,
             Notes = NotesEditor.Text,
-            CategoryId = selectedCategory.Id
+            CategoryId = selectedCategory.Id,
+            Icon = _selectedIcon
         };
 
         await App.Database.SaveAccountAsync(account);

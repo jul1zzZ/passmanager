@@ -14,6 +14,7 @@ public class Account : INotifyPropertyChanged
     public string Username { get; set; }
     public string Password { get; set; }
     public string Notes { get; set; }
+    public string Icon { get; set; } = "other.png";
 
     // Связь с категорией
     public int? CategoryId { get; set; }

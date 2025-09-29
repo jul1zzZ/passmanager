@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="pass.Pages.AddAccountPage"
              Title="Добавить аккаунт">
+
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
 
@@ -12,36 +12,58 @@
             <!-- Выбор категории -->
             <Picker x:Name="CategoryPicker" Title="Выберите категорию"/>
 
-            <!-- Поле пароля + кнопка "Сгенерировать" -->
+            <!-- Пароль + генерация -->
             <HorizontalStackLayout Spacing="10">
                 <Entry x:Name="PasswordEntry"
-               Placeholder="Пароль"
-               IsPassword="True"
-               HorizontalOptions="FillAndExpand"/>
+                       Placeholder="Пароль"
+                       IsPassword="True"
+                       HorizontalOptions="FillAndExpand"/>
                 <Button Text="Сгенерировать"
-                Clicked="OnGeneratePasswordClicked"/>
+                        Clicked="OnGeneratePasswordClicked"/>
             </HorizontalStackLayout>
 
-            <!-- Ползунок длины пароля -->
+            <!-- Длина пароля -->
             <VerticalStackLayout>
                 <Label Text="Длина пароля:" FontAttributes="Bold"/>
                 <Slider x:Name="LengthSlider"
-                Minimum="8"
-                Maximum="32"
-                Value="16"
-                ValueChanged="OnSliderValueChanged"/>
+                        Minimum="8"
+                        Maximum="32"
+                        Value="16"
+                        ValueChanged="OnSliderValueChanged"/>
                 <Label x:Name="LengthLabel" 
-               Text="16 символов"
-               HorizontalOptions="Center"/>
+                       Text="16 символов"
+                       HorizontalOptions="Center"/>
             </VerticalStackLayout>
 
+            <!-- Выбор иконки -->
+            <Label Text="Выберите иконку:" FontAttributes="Bold"/>
+            <CollectionView x:Name="IconCollection"
+                            ItemsSource="{Binding IconList}"
+                            SelectionMode="Single"
+                            SelectionChanged="OnIconSelected"
+                            ItemsLayout="Grid, 4">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="5" Margin="5" CornerRadius="8"
+                               HasShadow="False">
+                            <Frame.BorderColor>
+                                <MultiBinding Converter="{StaticResource SelectedIconConverter}">
+                                    <Binding Path="."/>
+                                    <Binding Source="{x:Reference IconCollection}" Path="SelectedItem"/>
+                                </MultiBinding>
+                            </Frame.BorderColor>
+                            <Image Source="{Binding}" WidthRequest="40" HeightRequest="40"/>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
             <Editor x:Name="NotesEditor"
-            Placeholder="Заметки"
-            HeightRequest="100"/>
+                    Placeholder="Заметки"
+                    HeightRequest="100"/>
 
             <Button Text="Сохранить"
-            Clicked="OnSaveClicked"/>
+                    Clicked="OnSaveClicked"/>
         </VerticalStackLayout>
-
     </ScrollView>
 </ContentPage>
