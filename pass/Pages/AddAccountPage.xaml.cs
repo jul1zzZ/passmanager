@@ -42,9 +42,13 @@ public partial class AddAccountPage : ContentPage
 
     private void OnIconSelected(object sender, SelectionChangedEventArgs e)
     {
-        if (IconCollection.SelectedItem is string icon)
+        if (e.CurrentSelection.FirstOrDefault() is string icon)
+        {
             _selectedIcon = icon;
+            IconCollection.SelectedItem = icon; // фиксируем выбранный элемент
+        }
     }
+
 
     private async void OnSaveClicked(object sender, EventArgs e)
     {

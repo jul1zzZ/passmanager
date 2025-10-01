@@ -1,46 +1,80 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="pass.Pages.EditAccountPage"
-             Title="Редактировать запись">
+             Title="Редактировать аккаунт"
+             BackgroundColor="#FAFAFA">
+
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
+        <VerticalStackLayout Padding="20" Spacing="20">
 
             <!-- Текущая иконка сервиса -->
-            <Frame Padding="10" CornerRadius="50" HasShadow="False" BorderColor="Gray" HorizontalOptions="Center">
-                <Image x:Name="SelectedIconPreview" WidthRequest="64" HeightRequest="64"/>
+            <Frame Padding="10"
+                   CornerRadius="50"
+                   HasShadow="False"
+                   BorderColor="#1976D2"
+                   BackgroundColor="White"
+                   HorizontalOptions="Center">
+                <Image x:Name="SelectedIconPreview"
+                       WidthRequest="64"
+                       HeightRequest="64"/>
             </Frame>
 
-            <Entry x:Name="ServiceNameEntry" Placeholder="Название сервиса"/>
-            <Entry x:Name="UsernameEntry" Placeholder="Логин"/>
+            <!-- Поля -->
+            <Entry x:Name="ServiceNameEntry"
+                   Placeholder="Название сервиса"
+                   BackgroundColor="White"
+                   TextColor="Black"/>
 
-            <!-- Выбор категории -->
-            <Picker x:Name="CategoryPicker" Title="Выберите категорию"/>
+            <Entry x:Name="UsernameEntry"
+                   Placeholder="Логин"
+                   BackgroundColor="White"
+                   TextColor="Black"/>
+
+            <!-- Категория -->
+            <Picker x:Name="CategoryPicker"
+                    Title="Выберите категорию"
+                    BackgroundColor="White"
+                    TextColor="Black"/>
 
             <!-- Пароль + генерация -->
             <HorizontalStackLayout Spacing="10">
                 <Entry x:Name="PasswordEntry"
                        Placeholder="Пароль"
                        IsPassword="True"
+                       BackgroundColor="White"
+                       TextColor="Black"
                        HorizontalOptions="FillAndExpand"/>
                 <Button Text="Сгенерировать"
+                        BackgroundColor="#1976D2"
+                        TextColor="White"
+                        CornerRadius="8"
                         Clicked="OnGeneratePasswordClicked"/>
             </HorizontalStackLayout>
 
-            <!-- Длина пароля -->
+            <!-- Слайдер длины пароля -->
             <VerticalStackLayout>
-                <Label Text="Длина пароля:" FontAttributes="Bold"/>
+                <Label Text="Длина пароля:" 
+                       FontAttributes="Bold"
+                       TextColor="Black"/>
                 <Slider x:Name="LengthSlider"
                         Minimum="8"
                         Maximum="32"
                         Value="16"
+                        MinimumTrackColor="#1976D2"
+                        MaximumTrackColor="#E0E0E0"
+                        ThumbColor="#1976D2"
                         ValueChanged="OnSliderValueChanged"/>
-                <Label x:Name="LengthLabel" 
+                <Label x:Name="LengthLabel"
                        Text="16 символов"
-                       HorizontalOptions="Center"/>
+                       HorizontalOptions="Center"
+                       TextColor="Gray"/>
             </VerticalStackLayout>
 
             <!-- Выбор иконки -->
-            <Label Text="Выберите иконку:" FontAttributes="Bold"/>
+            <Label Text="Выберите иконку:"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+
             <CollectionView x:Name="IconCollection"
                             ItemsSource="{Binding IconList}"
                             SelectionMode="Single"
@@ -48,18 +82,36 @@
                             ItemsLayout="Grid, 4">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame Padding="5" Margin="5" BorderColor="Gray" CornerRadius="8">
-                            <Image Source="{Binding}" WidthRequest="40" HeightRequest="40"/>
+                        <Frame Padding="5"
+                               Margin="5"
+                               CornerRadius="8"
+                               HasShadow="False"
+                               BorderColor="{x:Null}"
+                               BackgroundColor="White">
+                            <Image Source="{Binding}"
+                                   WidthRequest="40"
+                                   HeightRequest="40"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
                         </Frame>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
+            <!-- Заметки -->
             <Editor x:Name="NotesEditor"
                     Placeholder="Заметки"
-                    HeightRequest="100"/>
+                    HeightRequest="100"
+                    BackgroundColor="White"
+                    TextColor="Black"/>
 
-            <Button Text="Сохранить изменения"
+            <!-- Кнопка сохранения -->
+            <Button Text="💾 Сохранить изменения"
+                    BackgroundColor="#43A047"
+                    TextColor="White"
+                    CornerRadius="8"
+                    FontAttributes="Bold"
+                    HeightRequest="50"
                     Clicked="OnSaveClicked"/>
         </VerticalStackLayout>
     </ScrollView>

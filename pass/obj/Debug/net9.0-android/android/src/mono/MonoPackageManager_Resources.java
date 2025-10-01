@@ -6,6 +6,8 @@ public class MonoPackageManager_Resources {
 		"CommunityToolkit.Maui.dll",
 		"CommunityToolkit.Maui.Core.dll",
 		"GoogleGson.dll",
+		"Material.Components.Maui.dll",
+		"MaterialColorUtilities.dll",
 		"Microsoft.Extensions.Configuration.dll",
 		"Microsoft.Extensions.Configuration.Abstractions.dll",
 		"Microsoft.Extensions.DependencyInjection.dll",

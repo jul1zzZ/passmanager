@@ -1,7 +1,9 @@
-﻿using Microsoft.Maui.Controls.Hosting;
-using Microsoft.Maui.Hosting;
-using CommunityToolkit.Maui;
+﻿using CommunityToolkit.Maui;
+using Material.Components.Maui;
+using Material.Components.Maui.Extensions;
 using Microsoft.Extensions.Logging;
+using Microsoft.Maui.Controls.Hosting;
+using Microsoft.Maui.Hosting;
 
 namespace pass
 {
@@ -16,6 +18,7 @@ namespace pass
             builder
                 .UseMauiApp<App>(app => new App(dbPath))
                  .UseMauiCommunityToolkit()
+                 .UseMaterialComponents()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

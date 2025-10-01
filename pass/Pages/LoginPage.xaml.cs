@@ -1,6 +1,7 @@
-﻿using System.Text;
-using CommunityToolkit.Maui.Alerts;
+﻿using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
+using Material.Components.Maui; // важно для mdc:Button
+using System.Text;
 
 namespace pass.Pages;
 
@@ -27,12 +28,13 @@ public partial class LoginPage : ContentPage
     {
         if (_enteredPin.Length >= _pinLength) return;
 
-        if (sender is Button btn)
+        if (sender is Material.Components.Maui.Button btn) // ✅ верный тип
         {
             _enteredPin.Append(btn.Text);
             UpdatePinDisplay();
         }
     }
+
 
     private void OnBackspaceClicked(object sender, EventArgs e)
     {
@@ -57,20 +59,17 @@ public partial class LoginPage : ContentPage
 
         if (string.IsNullOrEmpty(savedPin))
         {
-            // Создание нового PIN
             await SecureStorage.SetAsync(PinKey, enteredPin);
             var toast = Toast.Make("PIN создан", ToastDuration.Short, 14);
             await toast.Show();
         }
         else
         {
-            // Проверка PIN
             if (enteredPin != savedPin)
             {
                 var toast = Toast.Make("Неверный PIN", ToastDuration.Short, 14);
                 await toast.Show();
 
-                // 🔥 Анимация "shake"
                 await ShakeAnimation(PinDisplay);
 
                 _enteredPin.Clear();
@@ -83,12 +82,24 @@ public partial class LoginPage : ContentPage
         Application.Current.MainPage = new NavigationPage(new MainPage());
     }
 
-    private void UpdatePinDisplay()
+    private async void UpdatePinDisplay()
     {
         Frame[] pins = { Pin1, Pin2, Pin3, Pin4 };
         for (int i = 0; i < _pinLength; i++)
         {
-            pins[i].BackgroundColor = i < _enteredPin.Length ? Colors.Black : Colors.Transparent;
+            var isFilled = i < _enteredPin.Length;
+            var frame = pins[i];
+
+            if (isFilled)
+            {
+                await frame.ScaleTo(1.2, 80, Easing.CubicOut);
+                frame.BackgroundColor = Colors.Black;
+                await frame.ScaleTo(1.0, 80, Easing.CubicIn);
+            }
+            else
+            {
+                frame.BackgroundColor = Colors.Transparent;
+            }
         }
     }
 

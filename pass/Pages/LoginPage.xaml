@@ -1,69 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mdc="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui"
              x:Class="pass.Pages.LoginPage"
              Title="Авторизация"
-             BackgroundColor="White">
+             BackgroundColor="#FAFAFA">
 
-    <ContentPage.Resources>
-        <!-- Стиль кружков -->
-        <Style x:Key="PinCircleStyle" TargetType="Frame">
-            <Setter Property="WidthRequest" Value="20"/>
-            <Setter Property="HeightRequest" Value="20"/>
-            <Setter Property="CornerRadius" Value="10"/>
-            <Setter Property="BorderColor" Value="Black"/>
-            <Setter Property="BackgroundColor" Value="Transparent"/>
-            <Setter Property="HasShadow" Value="False"/>
-        </Style>
-    </ContentPage.Resources>
-
-    <VerticalStackLayout Padding="40" Spacing="30" VerticalOptions="Center" HorizontalOptions="Center">
+    <VerticalStackLayout Padding="40" Spacing="30"
+                         VerticalOptions="Center" HorizontalOptions="Center">
 
         <!-- Заголовок -->
         <Label x:Name="TitleLabel"
                Text="Введите PIN"
-               FontSize="24"
+               FontSize="26"
                FontAttributes="Bold"
-               HorizontalOptions="Center"
-               TextColor="#333"/>
+               TextColor="#212121"
+               HorizontalOptions="Center"/>
 
-        <!-- Кружки -->
+        <!-- Индикаторы PIN -->
         <HorizontalStackLayout x:Name="PinDisplay" Spacing="15" HorizontalOptions="Center">
-            <Frame Style="{StaticResource PinCircleStyle}" x:Name="Pin1"/>
-            <Frame Style="{StaticResource PinCircleStyle}" x:Name="Pin2"/>
-            <Frame Style="{StaticResource PinCircleStyle}" x:Name="Pin3"/>
-            <Frame Style="{StaticResource PinCircleStyle}" x:Name="Pin4"/>
+            <Frame x:Name="Pin1"
+                   WidthRequest="20" HeightRequest="20"
+                   CornerRadius="10"
+                   BorderColor="#757575"
+                   BackgroundColor="Transparent"
+                   HasShadow="False"/>
+            <Frame x:Name="Pin2"
+                   WidthRequest="20" HeightRequest="20"
+                   CornerRadius="10"
+                   BorderColor="#757575"
+                   BackgroundColor="Transparent"
+                   HasShadow="False"/>
+            <Frame x:Name="Pin3"
+                   WidthRequest="20" HeightRequest="20"
+                   CornerRadius="10"
+                   BorderColor="#757575"
+                   BackgroundColor="Transparent"
+                   HasShadow="False"/>
+            <Frame x:Name="Pin4"
+                   WidthRequest="20" HeightRequest="20"
+                   CornerRadius="10"
+                   BorderColor="#757575"
+                   BackgroundColor="Transparent"
+                   HasShadow="False"/>
         </HorizontalStackLayout>
 
         <!-- Цифровая клавиатура -->
-        <Grid RowSpacing="10" ColumnSpacing="10">
+        <Grid RowSpacing="10" ColumnSpacing="10" Padding="10">
             <Grid.RowDefinitions>
-                <RowDefinition Height="60"/>
-                <RowDefinition Height="60"/>
-                <RowDefinition Height="60"/>
-                <RowDefinition Height="60"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="60"/>
-                <ColumnDefinition Width="60"/>
-                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="70"/>
             </Grid.ColumnDefinitions>
 
-            <!-- Цифры -->
-            <Button Text="1" Grid.Row="0" Grid.Column="0" Clicked="OnDigitClicked"/>
-            <Button Text="2" Grid.Row="0" Grid.Column="1" Clicked="OnDigitClicked"/>
-            <Button Text="3" Grid.Row="0" Grid.Column="2" Clicked="OnDigitClicked"/>
+            <mdc:Button Text="1" Grid.Row="0" Grid.Column="0" Clicked="OnDigitClicked"/>
+            <mdc:Button Text="2" Grid.Row="0" Grid.Column="1" Clicked="OnDigitClicked"/>
+            <mdc:Button Text="3" Grid.Row="0" Grid.Column="2" Clicked="OnDigitClicked"/>
 
-            <Button Text="4" Grid.Row="1" Grid.Column="0" Clicked="OnDigitClicked"/>
-            <Button Text="5" Grid.Row="1" Grid.Column="1" Clicked="OnDigitClicked"/>
-            <Button Text="6" Grid.Row="1" Grid.Column="2" Clicked="OnDigitClicked"/>
+            <mdc:Button Text="4" Grid.Row="1" Grid.Column="0" Clicked="OnDigitClicked"/>
+            <mdc:Button Text="5" Grid.Row="1" Grid.Column="1" Clicked="OnDigitClicked"/>
+            <mdc:Button Text="6" Grid.Row="1" Grid.Column="2" Clicked="OnDigitClicked"/>
 
-            <Button Text="7" Grid.Row="2" Grid.Column="0" Clicked="OnDigitClicked"/>
-            <Button Text="8" Grid.Row="2" Grid.Column="1" Clicked="OnDigitClicked"/>
-            <Button Text="9" Grid.Row="2" Grid.Column="2" Clicked="OnDigitClicked"/>
+            <mdc:Button Text="7" Grid.Row="2" Grid.Column="0" Clicked="OnDigitClicked"/>
+            <mdc:Button Text="8" Grid.Row="2" Grid.Column="1" Clicked="OnDigitClicked"/>
+            <mdc:Button Text="9" Grid.Row="2" Grid.Column="2" Clicked="OnDigitClicked"/>
 
-            <Button Text="⌫" Grid.Row="3" Grid.Column="0" Clicked="OnBackspaceClicked"/>
-            <Button Text="0" Grid.Row="3" Grid.Column="1" Clicked="OnDigitClicked"/>
-            <Button Text="✔" Grid.Row="3" Grid.Column="2" Clicked="OnSubmitClicked"/>
+            <mdc:Button Text="⌫" Grid.Row="3" Grid.Column="0" Clicked="OnBackspaceClicked"/>
+            <mdc:Button Text="0" Grid.Row="3" Grid.Column="1" Clicked="OnDigitClicked"/>
+            <mdc:Button Text="✔" Grid.Row="3" Grid.Column="2" Clicked="OnSubmitClicked"/>
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

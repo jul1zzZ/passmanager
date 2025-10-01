@@ -82,6 +82,9 @@ com.google.gson.annotations.Since;com.google.gson.annotations.Since
 GoogleGson.Annotations.IUntil, GoogleGson;com.google.gson.annotations.Until
 GoogleGson.Annotations.IUntil;com.google.gson.annotations.Until
 com.google.gson.annotations.Until;com.google.gson.annotations.Until
+Material.Components.Maui.Platform.PlatformTextField, Material.Components.Maui;crc644b99aa05fc0faf94.PlatformTextField
+Material.Components.Maui.Platform.PlatformTextField;crc644b99aa05fc0faf94.PlatformTextField
+material.components.maui.platform.PlatformTextField;crc644b99aa05fc0faf94.PlatformTextField
 Microsoft.Maui.Controls.Compatibility.Platform.Android.CheckBoxRenderer, Microsoft.Maui.Controls.Compatibility;crc6477f0d89a9cfd64b1.CheckBoxRenderer
 Microsoft.Maui.Controls.Compatibility.Platform.Android.CheckBoxRenderer;crc6477f0d89a9cfd64b1.CheckBoxRenderer
 microsoft.maui.controls.compatibility.platform.android.CheckBoxRenderer;crc6477f0d89a9cfd64b1.CheckBoxRenderer

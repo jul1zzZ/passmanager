@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "sIlwshcrXRg=",
+  "dgSpecHash": "sH6sBIp4Akw=",
   "success": true,
   "projectFilePath": "C:\\Users\\jusep\\source\\repos\\pass\\pass\\pass.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jusep\\.nuget\\packages\\communitytoolkit.maui\\12.2.0\\communitytoolkit.maui.12.2.0.nupkg.sha512",
     "C:\\Users\\jusep\\.nuget\\packages\\communitytoolkit.maui.core\\12.2.0\\communitytoolkit.maui.core.12.2.0.nupkg.sha512",
     "C:\\Users\\jusep\\.nuget\\packages\\googlegson\\2.13.0.1\\googlegson.2.13.0.1.nupkg.sha512",
+    "C:\\Users\\jusep\\.nuget\\packages\\material.components.maui\\0.2.2-preview\\material.components.maui.0.2.2-preview.nupkg.sha512",
+    "C:\\Users\\jusep\\.nuget\\packages\\materialcolorutilities\\0.3.0\\materialcolorutilities.0.3.0.nupkg.sha512",
     "C:\\Users\\jusep\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.5\\microsoft.extensions.configuration.9.0.5.nupkg.sha512",
     "C:\\Users\\jusep\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.5\\microsoft.extensions.configuration.abstractions.9.0.5.nupkg.sha512",
     "C:\\Users\\jusep\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.5\\microsoft.extensions.dependencyinjection.9.0.5.nupkg.sha512",

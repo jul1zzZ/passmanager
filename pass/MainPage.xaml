@@ -1,88 +1,146 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="pass.MainPage"
+             BackgroundColor="#FAFAFA"
              Title="Менеджер паролей">
 
-    <VerticalStackLayout Padding="20" Spacing="10">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
 
-        <!-- Действия -->
-        <HorizontalStackLayout Spacing="10">
-            <Button Text="Добавить" Clicked="OnAddClicked" />
-            <Button Text="Экспорт" Clicked="OnExportClicked" />
-            <Button Text="Импорт" Clicked="OnImportClicked" />
-        </HorizontalStackLayout>
+            <!-- Действия -->
+            <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
+                <Button Text="Добавить"
+                        BackgroundColor="#2196F3"
+                        TextColor="White"
+                        CornerRadius="8"
+                        Clicked="OnAddClicked"/>
+                <Button Text="Экспорт"
+                        BackgroundColor="#4CAF50"
+                        TextColor="White"
+                        CornerRadius="8"
+                        Clicked="OnExportClicked"/>
+                <Button Text="Импорт"
+                        BackgroundColor="#FF9800"
+                        TextColor="White"
+                        CornerRadius="8"
+                        Clicked="OnImportClicked"/>
+            </HorizontalStackLayout>
 
-        <!-- Поиск -->
-        <SearchBar x:Name="SearchBar"
-                   Placeholder="Поиск по сервису или логину"
-                   TextChanged="OnSearchTextChanged"/>
+            <!-- Поиск -->
+            <SearchBar x:Name="SearchBar"
+                       Placeholder="Поиск по сервису или логину"
+                       TextChanged="OnSearchTextChanged"
+                       BackgroundColor="White"
+                       TextColor="Black"
+                       PlaceholderColor="#888"
+                       Margin="0,10,0,0"/>
 
-        <!-- Сортировка -->
-        <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-            <Label Text="Сортировка:" VerticalOptions="Center"/>
-            <Picker x:Name="SortPicker" SelectedIndexChanged="OnSortChanged">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>По алфавиту</x:String>
-                        <x:String>По дате добавления</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
-        </HorizontalStackLayout>
+            <!-- Сортировка -->
+            <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                <Label Text="Сортировка:" VerticalOptions="Center" TextColor="Black"/>
+                <Picker x:Name="SortPicker"
+                        SelectedIndexChanged="OnSortChanged"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        WidthRequest="180">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>По алфавиту</x:String>
+                            <x:String>По дате добавления</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </HorizontalStackLayout>
 
-        <!-- Фильтр по категориям -->
-        <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-            <Label Text="Категория:" VerticalOptions="Center"/>
-            <Picker x:Name="CategoryFilterPicker" SelectedIndexChanged="OnCategoryFilterChanged"/>
-        </HorizontalStackLayout>
+            <!-- Фильтр -->
+            <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                <Label Text="Категория:" VerticalOptions="Center" TextColor="Black"/>
+                <Picker x:Name="CategoryFilterPicker"
+                        SelectedIndexChanged="OnCategoryFilterChanged"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        WidthRequest="180"/>
+            </HorizontalStackLayout>
 
-        <!-- Список аккаунтов -->
-        <CollectionView x:Name="AccountsList"
-                        ItemsSource="{Binding Accounts}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <SwipeView>
-                        <SwipeView.LeftItems>
-                            <SwipeItems Mode="Reveal">
-                                <SwipeItem Text="Редактировать" BackgroundColor="LightBlue"
-                                           Invoked="OnEditSwiped"
-                                           CommandParameter="{Binding .}" />
-                                <SwipeItem Text="Удалить" BackgroundColor="LightCoral"
-                                           Invoked="OnDeleteSwiped"
-                                           CommandParameter="{Binding .}" />
-                            </SwipeItems>
-                        </SwipeView.LeftItems>
+            <!-- Список аккаунтов -->
+            <CollectionView x:Name="AccountsList"
+                            ItemsSource="{Binding Accounts}"
+                            Margin="0,10,0,0">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <SwipeView>
+                            <!-- Действия слева -->
+                            <SwipeView.LeftItems>
+                                <SwipeItems Mode="Reveal">
+                                    <SwipeItem Text="Редактировать"
+                                               BackgroundColor="#2196F3"
+                                               Invoked="OnEditSwiped"
+                                               CommandParameter="{Binding .}" />
+                                    <SwipeItem Text="Удалить"
+                                               BackgroundColor="#E53935"
+                                               Invoked="OnDeleteSwiped"
+                                               CommandParameter="{Binding .}" />
+                                </SwipeItems>
+                            </SwipeView.LeftItems>
 
-                        <SwipeView.RightItems>
-                            <SwipeItems Mode="Reveal">
-                                <SwipeItem Text="Пароль" BackgroundColor="LightGreen"
-                                           Invoked="OnCopyPasswordSwiped"
-                                           CommandParameter="{Binding .}" />
-                                <SwipeItem Text="Логин" BackgroundColor="LightYellow"
-                                           Invoked="OnCopyUsernameSwiped"
-                                           CommandParameter="{Binding .}" />
-                                <SwipeItem Text="👁" BackgroundColor="LightGray"
-                                           Invoked="OnTogglePasswordSwiped"
-                                           CommandParameter="{Binding .}" />
-                            </SwipeItems>
-                        </SwipeView.RightItems>
+                            <!-- Действия справа -->
+                            <SwipeView.RightItems>
+                                <SwipeItems Mode="Reveal">
+                                    <SwipeItem Text="Пароль"
+                                               BackgroundColor="#43A047"
+                                               Invoked="OnCopyPasswordSwiped"
+                                               CommandParameter="{Binding .}" />
+                                    <SwipeItem Text="Логин"
+                                               BackgroundColor="#FB8C00"
+                                               Invoked="OnCopyUsernameSwiped"
+                                               CommandParameter="{Binding .}" />
+                                    <SwipeItem Text="👁"
+                                               BackgroundColor="#757575"
+                                               Invoked="OnTogglePasswordSwiped"
+                                               CommandParameter="{Binding .}" />
+                                </SwipeItems>
+                            </SwipeView.RightItems>
 
-                        <Frame Padding="10" Margin="5" BorderColor="Gray" CornerRadius="10">
-                            <HorizontalStackLayout Spacing="10">
-                                <!-- Иконка сервиса -->
-                                <Image Source="{Binding Icon}" WidthRequest="32" HeightRequest="32" VerticalOptions="Start"/>
-                                <VerticalStackLayout Spacing="5">
-                                    <Label Text="{Binding ServiceName}" FontSize="18" FontAttributes="Bold"/>
-                                    <Label Text="{Binding Username}" FontAttributes="Italic"/>
-                                    <Label Text="{Binding DisplayPassword}" TextColor="Red" FontFamily="Courier New"/>
-                                    <Label Text="{Binding Notes}" FontSize="12" TextColor="Gray"/>
-                                </VerticalStackLayout>
-                            </HorizontalStackLayout>
-                        </Frame>
-                    </SwipeView>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+                            <!-- Карточка аккаунта -->
+                            <Frame Margin="8"
+                                   Padding="15"
+                                   BackgroundColor="White"
+                                   CornerRadius="12"
+                                   HasShadow="True">
+                                <HorizontalStackLayout Spacing="15">
 
-    </VerticalStackLayout>
+                                    <!-- Иконка -->
+                                    <Image Source="{Binding Icon}"
+                                           WidthRequest="40"
+                                           HeightRequest="40"
+                                           VerticalOptions="Start"/>
+
+                                    <!-- Текстовая часть -->
+                                    <VerticalStackLayout Spacing="4">
+                                        <Label Text="{Binding ServiceName}"
+                                               FontSize="18"
+                                               FontAttributes="Bold"
+                                               TextColor="Black"/>
+                                        <Label Text="{Binding Username}"
+                                               FontAttributes="Italic"
+                                               FontSize="14"
+                                               TextColor="#555"/>
+                                        <Label Text="{Binding DisplayPassword}"
+                                               FontFamily="Courier New"
+                                               FontSize="14"
+                                               TextColor="#E53935"/>
+                                        <Label Text="{Binding Notes}"
+                                               FontSize="12"
+                                               TextColor="#777"/>
+                                    </VerticalStackLayout>
+
+                                </HorizontalStackLayout>
+                            </Frame>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

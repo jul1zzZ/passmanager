@@ -1,42 +1,84 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="pass.Pages.AddAccountPage"
-             Title="Добавить аккаунт">
+             Title="Добавить аккаунт"
+             BackgroundColor="#FAFAFA">
 
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
+        <VerticalStackLayout Padding="20" Spacing="20">
 
-            <Entry x:Name="ServiceNameEntry" Placeholder="Название сервиса"/>
-            <Entry x:Name="UsernameEntry" Placeholder="Логин"/>
+            <!-- Заголовок -->
+            <Label Text="Добавить аккаунт"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
 
-            <!-- Выбор категории -->
-            <Picker x:Name="CategoryPicker" Title="Выберите категорию"/>
+            <!-- Сервис -->
+            <Entry x:Name="ServiceNameEntry"
+                   Placeholder="Название сервиса"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   PlaceholderColor="#888"
+                   HeightRequest="45"/>
 
-            <!-- Пароль + генерация -->
+            <!-- Логин -->
+            <Entry x:Name="UsernameEntry"
+                   Placeholder="Логин"
+                   BackgroundColor="White"
+                   TextColor="Black"
+                   PlaceholderColor="#888"
+                   HeightRequest="45"/>
+
+            <!-- Категория -->
+            <Label Text="Категория:" 
+                   FontAttributes="Bold" 
+                   TextColor="Black"/>
+            <Picker x:Name="CategoryPicker"
+                    Title="Выберите категорию"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    HeightRequest="45"/>
+
+            <!-- Пароль -->
+            <Label Text="Пароль:" FontAttributes="Bold" TextColor="Black"/>
             <HorizontalStackLayout Spacing="10">
                 <Entry x:Name="PasswordEntry"
                        Placeholder="Пароль"
                        IsPassword="True"
+                       BackgroundColor="White"
+                       TextColor="Black"
+                       PlaceholderColor="#888"
+                       HeightRequest="45"
                        HorizontalOptions="FillAndExpand"/>
                 <Button Text="Сгенерировать"
+                        BackgroundColor="#2196F3"
+                        TextColor="White"
                         Clicked="OnGeneratePasswordClicked"/>
             </HorizontalStackLayout>
 
-            <!-- Длина пароля -->
             <VerticalStackLayout>
-                <Label Text="Длина пароля:" FontAttributes="Bold"/>
+                <Label Text="Длина пароля:" FontAttributes="Bold" TextColor="Black"/>
+
                 <Slider x:Name="LengthSlider"
-                        Minimum="8"
-                        Maximum="32"
-                        Value="16"
-                        ValueChanged="OnSliderValueChanged"/>
+            Minimum="8"
+            Maximum="32"
+            Value="16"
+            ValueChanged="OnSliderValueChanged"
+            MinimumTrackColor="#1976D2"
+            MaximumTrackColor="#E0E0E0"
+            ThumbColor="#1976D2"/>
+
                 <Label x:Name="LengthLabel" 
-                       Text="16 символов"
-                       HorizontalOptions="Center"/>
+           Text="16 символов"
+           HorizontalOptions="Center" TextColor="Black"/>
             </VerticalStackLayout>
 
-            <!-- Выбор иконки -->
-            <Label Text="Выберите иконку:" FontAttributes="Bold"/>
+
+            <!-- Иконка -->
+            <Label Text="Выберите иконку:" 
+                   FontAttributes="Bold" 
+                   TextColor="Black"/>
             <CollectionView x:Name="IconCollection"
                             ItemsSource="{Binding IconList}"
                             SelectionMode="Single"
@@ -44,25 +86,34 @@
                             ItemsLayout="Grid, 4">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame Padding="5" Margin="5" CornerRadius="8"
-                               HasShadow="False">
-                            <Frame.BorderColor>
-                                <MultiBinding Converter="{StaticResource SelectedIconConverter}">
-                                    <Binding Path="."/>
-                                    <Binding Source="{x:Reference IconCollection}" Path="SelectedItem"/>
-                                </MultiBinding>
-                            </Frame.BorderColor>
-                            <Image Source="{Binding}" WidthRequest="40" HeightRequest="40"/>
+                        <Frame Padding="5"
+                               Margin="5"
+                               CornerRadius="8"
+                               HasShadow="False"
+                               BackgroundColor="White"
+                               BorderColor="#DDD">
+                            <Image Source="{Binding}" 
+                                   WidthRequest="40" 
+                                   HeightRequest="40"/>
                         </Frame>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
+            <!-- Заметки -->
             <Editor x:Name="NotesEditor"
                     Placeholder="Заметки"
-                    HeightRequest="100"/>
+                    HeightRequest="100"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    PlaceholderColor="#888"/>
 
+            <!-- Кнопка сохранить -->
             <Button Text="Сохранить"
+                    BackgroundColor="#4CAF50"
+                    TextColor="White"
+                    HeightRequest="50"
+                    CornerRadius="10"
                     Clicked="OnSaveClicked"/>
         </VerticalStackLayout>
     </ScrollView>

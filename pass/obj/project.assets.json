@@ -52,6 +52,32 @@
           }
         }
       },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Material.Components.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Material.Components.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -2502,6 +2528,32 @@
           "lib/net8.0-android34.0/GoogleGson.dll": {
             "related": ".aar;.pdb;.xml"
           }
+        }
+      },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Material.Components.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Material.Components.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/9.0.5": {
@@ -4956,6 +5008,32 @@
           }
         }
       },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Material.Components.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Material.Components.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -7406,6 +7484,32 @@
           "lib/net8.0-android34.0/GoogleGson.dll": {
             "related": ".aar;.pdb;.xml"
           }
+        }
+      },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Material.Components.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Material.Components.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/9.0.5": {
@@ -9860,6 +9964,32 @@
           }
         }
       },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Material.Components.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Material.Components.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -12312,6 +12442,32 @@
           }
         }
       },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Material.Components.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Material.Components.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -14748,6 +14904,28 @@
           }
         }
       },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -15271,6 +15449,28 @@
           "lib/net9.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/9.0.5": {
@@ -15798,6 +15998,28 @@
           }
         }
       },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -16321,6 +16543,28 @@
           "lib/net9.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/9.0.5": {
@@ -16848,6 +17092,28 @@
           }
         }
       },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -17373,6 +17639,28 @@
           }
         }
       },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -17896,6 +18184,28 @@
           "lib/net9.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/9.0.5": {
@@ -18517,6 +18827,28 @@
           }
         }
       },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -19047,6 +19379,28 @@
           "lib/net9.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/9.0.5": {
@@ -19581,6 +19935,28 @@
           }
         }
       },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -20108,6 +20484,28 @@
           "lib/net9.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/9.0.5": {
@@ -20642,6 +21040,28 @@
           }
         }
       },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -21170,6 +21590,28 @@
           "lib/net9.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/9.0.5": {
@@ -22064,6 +22506,28 @@
           }
         }
       },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -22799,6 +23263,28 @@
           "lib/net9.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/9.0.5": {
@@ -23538,6 +24024,28 @@
           }
         }
       },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -24270,6 +24778,28 @@
           "lib/net9.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/9.0.5": {
@@ -25007,6 +25537,28 @@
           "lib/net9.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Material.Components.Maui/0.2.2-preview": {
+        "type": "package",
+        "dependencies": {
+          "MaterialColorUtilities": "0.3.0",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Material.Components.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Material.Components.Maui.dll": {}
+        }
+      },
+      "MaterialColorUtilities/0.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MaterialColorUtilities.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/9.0.5": {
@@ -25792,6 +26344,38 @@
         "lib/net8.0-android34.0/GoogleGson.pdb",
         "lib/net8.0-android34.0/GoogleGson.xml",
         "readme.md"
+      ]
+    },
+    "Material.Components.Maui/0.2.2-preview": {
+      "sha512": "sB9dR8HOhcKSsJZDE/mHsk4aYtnPQOQrVR1yJmgaxKJYls8Nbxs77Vyc6SCEzlM6EuEGuc+6giZvUNAcas8KHg==",
+      "type": "package",
+      "path": "material.components.maui/0.2.2-preview",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0-android34.0/Material.Components.Maui.dll",
+        "lib/net8.0-android34.0/Material.Components.Maui.xml",
+        "lib/net8.0-ios17.2/Material.Components.Maui.dll",
+        "lib/net8.0-maccatalyst17.2/Material.Components.Maui.dll",
+        "lib/net8.0-windows10.0.19041/Material.Components.Maui.dll",
+        "material.components.maui.0.2.2-preview.nupkg.sha512",
+        "material.components.maui.nuspec"
+      ]
+    },
+    "MaterialColorUtilities/0.3.0": {
+      "sha512": "KxXxwL8SJoI63rb7onZKL7rBZmoWQj2aVLNf7ZMNzq6mvfEzR8XInvIAi+hj6NGDm9IvcQ0YJ2SWTUHoPjTABg==",
+      "type": "package",
+      "path": "materialcolorutilities/0.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "analyzers/dotnet/roslyn4.0/cs/MaterialColorUtilities.SourceGenerators.dll",
+        "lib/net6.0/MaterialColorUtilities.dll",
+        "lib/netstandard2.0/MaterialColorUtilities.dll",
+        "lib/netstandard2.1/MaterialColorUtilities.dll",
+        "materialcolorutilities.0.3.0.nupkg.sha512",
+        "materialcolorutilities.nuspec"
       ]
     },
     "Microsoft.Extensions.Configuration/9.0.5": {
@@ -29982,6 +30566,7 @@
   "projectFileDependencyGroups": {
     "net9.0-android35.0": [
       "CommunityToolkit.Maui >= 12.2.0",
+      "Material.Components.Maui >= 0.2.2-preview",
       "Microsoft.Extensions.Logging.Debug >= 9.0.5",
       "Microsoft.Maui.Controls >= 9.0.90",
       "Microsoft.Maui.Controls.Compatibility >= 9.0.90",
@@ -29991,6 +30576,7 @@
     ],
     "net9.0-ios18.5": [
       "CommunityToolkit.Maui >= 12.2.0",
+      "Material.Components.Maui >= 0.2.2-preview",
       "Microsoft.Extensions.Logging.Debug >= 9.0.5",
       "Microsoft.Maui.Controls >= 9.0.90",
       "Microsoft.Maui.Controls.Compatibility >= 9.0.90",
@@ -30000,6 +30586,7 @@
     ],
     "net9.0-maccatalyst18.5": [
       "CommunityToolkit.Maui >= 12.2.0",
+      "Material.Components.Maui >= 0.2.2-preview",
       "Microsoft.Extensions.Logging.Debug >= 9.0.5",
       "Microsoft.Maui.Controls >= 9.0.90",
       "Microsoft.Maui.Controls.Compatibility >= 9.0.90",
@@ -30009,6 +30596,7 @@
     ],
     "net9.0-windows10.0.19041": [
       "CommunityToolkit.Maui >= 12.2.0",
+      "Material.Components.Maui >= 0.2.2-preview",
       "Microsoft.Extensions.Logging.Debug >= 9.0.5",
       "Microsoft.Maui.Controls >= 9.0.90",
       "Microsoft.Maui.Controls.Compatibility >= 9.0.90",
@@ -30087,6 +30675,10 @@
             "target": "Package",
             "version": "[12.2.0, )"
           },
+          "Material.Components.Maui": {
+            "target": "Package",
+            "version": "[0.2.2-preview, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[9.0.5, )"
@@ -30141,6 +30733,10 @@
           "CommunityToolkit.Maui": {
             "target": "Package",
             "version": "[12.2.0, )"
+          },
+          "Material.Components.Maui": {
+            "target": "Package",
+            "version": "[0.2.2-preview, )"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
@@ -30197,6 +30793,10 @@
             "target": "Package",
             "version": "[12.2.0, )"
           },
+          "Material.Components.Maui": {
+            "target": "Package",
+            "version": "[0.2.2-preview, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[9.0.5, )"
@@ -30252,6 +30852,10 @@
           "CommunityToolkit.Maui": {
             "target": "Package",
             "version": "[12.2.0, )"
+          },
+          "Material.Components.Maui": {
+            "target": "Package",
+            "version": "[0.2.2-preview, )"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
