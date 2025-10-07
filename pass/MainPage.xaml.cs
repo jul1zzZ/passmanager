@@ -61,7 +61,6 @@ public partial class MainPage : ContentPage
             Accounts.Add(a);
     }
 
-    // ------------------- Swipe Handlers -------------------
 
     private async void OnEditSwiped(object sender, EventArgs e)
     {
@@ -107,25 +106,19 @@ public partial class MainPage : ContentPage
             account.IsPasswordVisible = !account.IsPasswordVisible;
     }
 
-    // ------------------- Add / Search / Sort -------------------
 
     private async void OnAddClicked(object sender, EventArgs e) => await Navigation.PushAsync(new AddAccountPage());
     private void OnSearchTextChanged(object sender, TextChangedEventArgs e) => ApplySortAndFilter();
     private void OnSortChanged(object sender, EventArgs e) => ApplySortAndFilter();
     private void OnCategoryFilterChanged(object sender, EventArgs e) => ApplySortAndFilter();
 
-    // ------------------- Export / Import -------------------
-
-    // ------------------- Export / Import -------------------
 
     private async void OnExportClicked(object sender, EventArgs e)
     {
         try
         {
-            // если export открывает share и вызывает OnSleep — помечаем флаг
             App.IsPickingFile = true;
 
-            // запрашиваем пароль (без isPassword)
             string password = await DisplayPromptAsync(
                 "Экспорт",
                 "Введите пароль для шифрования:",
@@ -141,10 +134,8 @@ public partial class MainPage : ContentPage
             var accounts = await App.Database.GetAccountsAsync();
             var path = await BackupService.ExportAsync(password, accounts);
 
-            // показываем место сохранения и предлагаем поделиться (Share)
             await DisplayAlert("Успех", $"Бэкап сохранён:\n{path}", "OK");
 
-            // Открыть системный диалог Share (не обязательно, можно убрать)
             try
             {
                 await Share.RequestAsync(new ShareFileRequest
@@ -155,7 +146,6 @@ public partial class MainPage : ContentPage
             }
             catch
             {
-                // Share может бросать, игнорируем — главное, файл сохранён
             }
         }
         catch (Exception ex)
@@ -172,18 +162,15 @@ public partial class MainPage : ContentPage
     {
         try
         {
-            App.IsPickingFile = true; // блокируем автологин на время выбора файла
+            App.IsPickingFile = true; 
 
-            // открываем стандартный FilePicker — без FileTypes (любой файл)
             var result = await FilePicker.Default.PickAsync(new PickOptions
             {
                 PickerTitle = "Выберите файл резервной копии"
-                // НЕ указываем FileTypes — это даст возможность выбрать любой файл
             });
 
             if (result == null) return;
 
-            // необязательно: можно предупредить, если файл не .enc
             if (!result.FileName.EndsWith(".enc", StringComparison.OrdinalIgnoreCase))
             {
                 var proceed = await DisplayAlert("Внимание",

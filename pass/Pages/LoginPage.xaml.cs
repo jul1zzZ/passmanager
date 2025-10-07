@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
-using Material.Components.Maui; // важно для mdc:Button
+using Material.Components.Maui;
 using System.Text;
 
 namespace pass.Pages;
@@ -9,7 +9,7 @@ public partial class LoginPage : ContentPage
 {
     private const string PinKey = "UserPIN";
     private StringBuilder _enteredPin = new();
-    private int _pinLength = 4; // PIN из 4 цифр
+    private int _pinLength = 4;
 
     public LoginPage()
     {
@@ -28,7 +28,7 @@ public partial class LoginPage : ContentPage
     {
         if (_enteredPin.Length >= _pinLength) return;
 
-        if (sender is Material.Components.Maui.Button btn) // ✅ верный тип
+        if (sender is Material.Components.Maui.Button btn) 
         {
             _enteredPin.Append(btn.Text);
             UpdatePinDisplay();

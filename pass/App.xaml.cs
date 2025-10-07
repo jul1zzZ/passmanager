@@ -7,7 +7,6 @@ namespace pass
     {
         public static DatabaseService Database { get; private set; }
 
-        // Флаг: вошёл ли пользователь
         public static bool IsAuthenticated { get; set; } = false;
         public static bool IsPickingFile { get; set; } = false;
 
@@ -17,7 +16,6 @@ namespace pass
 
             Database = new DatabaseService(dbPath);
 
-            // При запуске всегда начинаем с авторизации
             MainPage = new NavigationPage(new LoginPage());
         }
 
@@ -25,7 +23,6 @@ namespace pass
         {
             base.OnSleep();
 
-            // Если мы не выбираем файл — сбрасываем авторизацию
             if (!IsPickingFile)
                 IsAuthenticated = false;
         }

@@ -16,7 +16,6 @@ public class Account : INotifyPropertyChanged
     public string Notes { get; set; }
     public string Icon { get; set; } = "other.png";
 
-    // Связь с категорией
     public int? CategoryId { get; set; }
 
     private bool isPasswordVisible;

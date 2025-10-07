@@ -8,15 +8,12 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <!-- Подключение стандартных стилей -->
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
 
-                <!-- Подключение Material Design -->
                 <mds:MaterialStyles />
             </ResourceDictionary.MergedDictionaries>
 
-            <!-- Конвертеры -->
             <converters:InverseBoolConverter x:Key="InverseBoolConverter"/>
             <converters:SelectedIconConverter x:Key="SelectedIconConverter"/>
         </ResourceDictionary>

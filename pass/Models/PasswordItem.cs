@@ -28,7 +28,6 @@ public class PasswordItem : INotifyPropertyChanged
         }
     }
 
-    // вычисляемое свойство для UI
     public string DisplayPassword => IsPasswordHidden ? "••••••" : Password;
 
     public event PropertyChangedEventHandler PropertyChanged;
